@@ -40,7 +40,13 @@ const tweetsArray = [
 function App() {
   return (
     <div className="App">
-      <Tweet />
+      <Tweet
+        name={tweetsArray[0].user.name}
+        handle={tweetsArray[0].user.handle}
+        image={tweetsArray[0].user.image}
+        timestamp={tweetsArray[0].timestamp}
+        message={tweetsArray[0].message}
+      />
     </div>
   );
 }
